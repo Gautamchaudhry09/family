@@ -1,0 +1,296 @@
+
+
+
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    margin: 0px;
+    padding: 0px;
+    width: 100%;
+    /* height: 1000px; */
+    font-family: 'Sedgwick Ave Display', cursive;
+    background-color: rgb(140, 2, 50);
+}
+
+
+/* navigation bar */
+.navbar {
+    display: flex;
+    align-items: center;
+    position: sticky;
+    top: 0px;
+    z-index: 100;
+}
+
+.navbar::before {
+    content: "";
+    opacity: 0.4;
+    z-index: -3;
+    height: 100%;
+    width: 100%;
+    position: absolute;
+    background-color: rgb(73, 5, 5);
+}
+
+.logo {
+    margin: 5px;
+}
+
+.logo img {
+    height: 75px;
+    border-radius: 20px;
+    margin-left: 30px;
+}
+
+ul {
+    list-style: none;
+    display: flex;
+}
+
+.navbar .list li {
+    padding: 10px;
+}
+
+.navbar .list li a {
+    padding: 10px;
+    font-size: 23px;
+    text-decoration: none;
+    color: white;
+    text-shadow: 2ch;
+}
+
+.navbar .list li a:hover {
+    background-color: white;
+    /* padding: 10px; */
+    text-decoration: none;
+    border-radius: 15px;
+    opacity: 0.5;
+    color: black;
+    /* text-decoration: underline; */
+}
+
+
+/* HOMEPAGE */
+
+.home {
+    display: flex;
+    flex-direction: column;
+    padding: 10px 50px;
+    align-items: center;
+    justify-content: center;
+    height: 700px;
+}
+
+.home::before {
+    content: "";
+    background: url(IMG-20220612-WA0010.jpg) no-repeat center /cover;
+    position: absolute;
+    top: 0px;
+    opacity: 0.8;
+    z-index: -6;
+    height: 717px;
+    width: 700px;
+    padding-top: 90px;
+    border: 2px solid rgb(47, 2, 2);
+}
+
+/* #images {
+    display: none;
+} */
+/* #img1 {
+    width: 100px;
+    grid-area: img1;
+}
+#img2 {
+    width: 100px;
+    grid-area: img2;
+}
+#img3 {
+    grid-area: img3;
+}
+#img4 {
+    grid-area: img4;
+} */
+
+.home::after {
+    content: "";
+    background-color: rgb(209, 57, 110);
+    position: absolute;
+    /* display: grid;
+    grid-template-areas: 
+    'img1 img2'
+    'img3 img4'; */
+    top: 0px;
+    opacity: 0.8;
+    z-index: -7;
+    height: 720px;
+    width: 100%;
+    padding-top: 90px;
+}
+
+.home h1 {
+    color: rgb(245, 156, 171);
+    text-decoration: underline;
+    opacity: 0.9;
+    font-size: 3rem;
+}
+
+.home h1:hover {
+    color: rgb(245, 156, 171);
+    background-color: rgba(205, 55, 122, 0.611);
+    cursor: pointer;
+    opacity: 1;
+    text-decoration: underline;
+}
+
+#lovebtn:hover {
+    background-color: rgb(253, 73, 103);
+    color: rgb(88, 2, 12);
+    font-size: 15px;
+}
+
+#lovebtn {
+    background-color: rgba(229, 7, 44, 0.626);
+    color: rgb(88, 2, 12);
+    font-size: 2.8vh;
+    cursor: pointer;
+    border-radius: 17px;
+    border: 2px solid rgba(163, 220, 211, 0.504);
+}
+
+#p1,
+#p2 {
+    color: rgb(206, 187, 254);
+    font-size: 20px;
+    padding: 5px;
+    font-size: 3.5vh;
+    border-radius: 7px;
+}
+
+#p1 {
+    background-color: rgba(11, 11, 162, 0.648);
+    cursor: pointer;
+}
+
+#p2 {
+    background-color: rgba(63, 161, 18, 0.632);
+    cursor: pointer;
+}
+
+#p2:hover,
+#p1:hover {
+    background-color: rgb(253, 73, 103);
+}
+
+
+
+/* SERVICES */
+.primary-heading {
+    text-align: center;
+    font-size: 3rem;
+    color: rgb(137, 5, 5);
+    text-decoration: underline;
+    text-shadow: 4px 2px rgb(0, 0, 0);
+    padding: 20px;
+    margin-top: 10px;
+}
+
+#service-h2 {
+    background-color: rgba(207, 119, 255, 0.728);
+}
+
+.services {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+}
+
+#service-container {
+    position: relative;
+    height: 200px;
+
+}
+
+#service-container::before {
+    content: "";
+    background-color: rgba(250, 149, 204, 0.946);
+    position: absolute;
+    width: 100%;
+    height: 700px;
+    z-index: -5;
+    opacity: 0.8;
+}
+
+.box {
+    display: flex;
+    align-items: center;
+    background-color: rgb(253, 178, 243);
+    flex-direction: column;
+    text-align: center;
+    border: 2px solid brown;
+    padding: 20px;
+    margin: 15px;
+    height: 350px;
+    width: 400px;
+    border-radius: 20px;
+    box-shadow: 5px 5px rgb(249, 56, 34);
+}
+
+.secondary-heading {
+    font-size: 2.5rem;
+    margin: 10px;
+    padding: 4px;
+    text-shadow: 2px 2px rgb(249, 56, 34);
+}
+
+.box p {
+    margin: 3px;
+    border-radius: 12px;
+    background-color: rgba(239, 13, 51, 0.329);
+}
+
+.box img {
+    width: 170px;
+    border: 2px solid black;
+    border-radius: 15px;
+    box-shadow: 1px 1px black;
+}
+
+
+/* Our pictures */
+
+#pics-container {
+    position: relative;
+    margin-top: 400px;
+    height: 1200px;
+}
+
+.pics {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.pics img {
+    margin: 20px;
+}
+
+#pics-container::before {
+    content: "";
+    position: absolute;
+    background-color: rgba(246, 143, 143, 0.893);
+    height: 100%;
+    width: 100%;
+    z-index: -10;
+}
+
+.pics img {
+    width: 350px;
+    border: 2px solid black;
+    box-shadow: 2px 2px rgb(50, 7, 7);
+    border-radius: 30px;
+}
