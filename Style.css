@@ -86,7 +86,7 @@ ul {
 
 .home::before {
     content: "";
-    background: url(IMG-20220612-WA0010.jpg) no-repeat center /cover;
+    background: url(20230319_143759.jpg) no-repeat center /cover;
     position: absolute;
     top: 0px;
     opacity: 0.8;
